@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 import { Merriweather } from "next/font/google"
+import NavBar from "@/components/NavBar";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -32,13 +33,12 @@ export default function RootLayout({
 }>) {
   return (
     <ClerkProvider>
-    <html lang="en">
-      <body
-        className={defaultFont.className}
-      >
-        {children}
-      </body>
-    </html>
+      <html lang="en">
+        <body className={defaultFont.className}>
+          <NavBar />
+          {children}
+        </body>
+      </html>
     </ClerkProvider>
   );
 }
