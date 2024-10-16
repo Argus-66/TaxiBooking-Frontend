@@ -8,7 +8,7 @@ export default function Home() {
         <div className="bg-blue-100">
           Booking
         </div>
-        <div className="col-span-2 bg-red-100 order-first">
+        <div className="col-span-2 bg-red-100">
           Map
         </div>
       </div>
